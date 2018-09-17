@@ -10,7 +10,7 @@ public class Solution {
 
 
       SubClass s = new SubClass();
-      Writer w = new Programmer();
+      Writer w2 = new Programmer();
       //Programmer w2 = (Programmer)w;
       //Programmer w2 = w;
       //w2.write();
