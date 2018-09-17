@@ -11,6 +11,8 @@ public class Solution {
 
       SubClass s = new SubClass();
       Writer w2 = new Programmer();
+      SubClass s2 = new SubClass();
+      Writer w = new Programmer();
       //Programmer w2 = (Programmer)w;
       //Programmer w2 = w;
       //w2.write();
