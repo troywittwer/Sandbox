@@ -1,9 +1,8 @@
-package sandbox;
+package demos;
 
 import java.awt.Point;
 
-class RectanglePlus
-    implements Relatable {
+class RectanglePlus implements Relatable {
   public int width = 0;
   public int height = 0;
   public Point origin;
@@ -13,6 +12,7 @@ class RectanglePlus
     origin = new Point(0, 0);
   }
   public RectanglePlus(Point p) {
+
     origin = p;
   }
   public RectanglePlus(int w, int h) {
