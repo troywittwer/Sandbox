@@ -1,6 +1,6 @@
 package sandbox;
 
-import static sandbox.Planet.EARTH;
+import sandbox.Calculator.IntegerMath;
 
 public class Main {
 
@@ -9,10 +9,12 @@ public class Main {
 
     demoToStringOverride();
     demoAbstractClass();
+    demoFinal();
     demoLocalClass();
     demoNestedClass();
     demoInterfaceImplementation();
     demoEnum();
+    demoLambda();
 
   }
 
@@ -32,6 +34,10 @@ public class Main {
     ConcreteClass conClass = new ConcreteClass();
     conClass.printAbstractInfo();
 
+  }
+
+  public static void demoFinal() {
+    FinalDemo.finalDemo();
   }
 
   public static void demoLocalClass() {
@@ -69,6 +75,30 @@ public class Main {
 
   public static void demoEnum() {
 
+    // Basic enum
+    // The enum is like a data type
+    Day day;
+
+    day = Day.MONDAY;
+
+    switch (day) {
+      case SUNDAY:
+
+        break;
+      case MONDAY:
+        break;
+      case TUESDAY:
+        break;
+      case WEDNESDAY:
+        break;
+      case THURSDAY:
+        break;
+      case FRIDAY:
+        break;
+      case SATURDAY:
+        break;
+    }
+
     System.out.println("Check your weight on another planet");
     System.out.println("Enter your weight on Earth in pounds");
 
@@ -84,7 +114,7 @@ public class Main {
     // for quick testing
     earthWeight = 200;
 
-    double mass = earthWeight / EARTH.surfaceGravity();
+    double mass = earthWeight / Planet.EARTH.surfaceGravity();
     // The compiler automatically adds some special methods when it creates an enum. For example,
     // they have a static values method that returns an array containing all of the values of the
     // enum in the order they are declared.
@@ -93,12 +123,38 @@ public class Main {
       System.out.printf("Your weight on %s is %f%n",
           p, p.surfaceWeight(mass));
     }
-  }
+
+    }
 
   public static void demoNestedClass() {
     NestedClass n = new NestedClass();
     n.getOuterClassField();
+
     //InnerClass i = new InnerClass(); // illegal
 
+  }
+
+  public static void demoLambda() {
+
+    // A lambda expression consists of the following:
+    //
+    // A comma-separated list of formal parameters enclosed in parentheses.
+    //
+    // The arrow token, ->
+    //
+    // A body, which consists of a single expression or a statement block
+    //
+    // Note: You can omit the data type of the parameters in a lambda expression.
+    // In addition, you can omit the parentheses if there is only one parameter.
+
+    Calculator myApp = new Calculator();
+
+    // implement IntegerMath interface with addition and
+    // subtraction IntegerMath objects
+    IntegerMath addition = (a, b) -> a + b;
+    IntegerMath subtraction = (a, b) -> a - b;
+
+    System.out.println("40 + 2 = " + myApp.operateBinary(40, 2, addition));
+    System.out.println("20 - 10 = " + myApp.operateBinary(20, 10, subtraction));
   }
 }
