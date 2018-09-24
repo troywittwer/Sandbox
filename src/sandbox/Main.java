@@ -9,9 +9,10 @@ public class Main {
 
     demoToStringOverride();
     demoAbstractClass();
+    demoLocalClass();
+    demoNestedClass();
     demoInterfaceImplementation();
     demoEnum();
-    demoNestedClass();
 
   }
 
@@ -31,6 +32,25 @@ public class Main {
     ConcreteClass conClass = new ConcreteClass();
     conClass.printAbstractInfo();
 
+  }
+
+  public static void demoLocalClass() {
+    // Local classe are classes that are defined in a block,
+    // which is a group of zero or more statements between balanced braces.
+    // You typically find local classes defined in the body of a method.
+
+    sayGoodbyeInEnglish();
+  }
+
+  public static void sayGoodbyeInEnglish() {
+    class EnglishGoodbye {
+      public static final String farewell = "Bye bye";
+      public void sayGoodbye() {
+        System.out.println(farewell);
+      }
+    }
+    EnglishGoodbye myEnglishGoodbye = new EnglishGoodbye();
+    myEnglishGoodbye.sayGoodbye();
   }
 
   public static void demoInterfaceImplementation() {
