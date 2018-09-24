@@ -1,8 +1,9 @@
 package sandbox;
 
-import sandbox.Automobile;
-
 public class Car extends Automobile {
 
+  public Car(String m) {
+    super(m);
+  }
 
 }
