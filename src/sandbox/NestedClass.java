@@ -7,12 +7,12 @@ class NestedClass {
   public int getOuterClassField() {
     return outerClassField;
   }
-  static class InnerClass {
+  class InnerClass {
 
     void changeOuterClassField() {
 
       // can't do this if static
-      //outerClassField = 5;
+      outerClassField = 5;
     }
 
   }

@@ -3,6 +3,18 @@ package sandbox;
 public class Automobile {
 
   private String make;
+  private String model;
+  private int miles;
+
+  public int getSpeeds() {
+    return speeds;
+  }
+
+  public void setSpeeds(int speeds) {
+    this.speeds = speeds;
+  }
+
+  protected int speeds;
 
   public Automobile(String m) {
     make = m;
