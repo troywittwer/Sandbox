@@ -3,6 +3,10 @@ package sandbox;
 import java.util.ArrayList;
 
 // https://www.caveofprogramming.com/java-video/java-for-complete-beginners-video-part-31-generics-wildcards.html
+
+/**
+ *
+ */
 class Machine {
 
     @Override
@@ -10,6 +14,9 @@ class Machine {
         return "I am a machine";
     }
 
+    /**
+     *
+     */
     public void start() {
         System.out.println("Machine starting.");
     }
