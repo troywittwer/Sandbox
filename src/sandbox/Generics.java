@@ -11,7 +11,8 @@ public class Generics {
       System.out.println();
     }
 
-    public static void genericDemo() {
+
+  public static void genericDemo() {
       // Create arrays of Integer, Double and Character
       Integer[] intArray = { 1, 2, 3, 4, 5 };
       Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };

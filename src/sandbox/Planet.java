@@ -13,6 +13,11 @@ public enum Planet {
   URANUS  (8.686e+25, 2.5559e7),
   NEPTUNE (1.024e+26, 2.4746e7);
 
+  /**
+   *
+   * @param mass
+   * @param radius
+   */
   Planet(double mass, double radius) {
     this.mass = mass;
     this.radius = radius;
