@@ -61,8 +61,7 @@ public class BulkDataOperationsExamples {
     // 2. Print names of members, forEach operation
 
     System.out.println("Members of the collection (bulk data operations):");
-    roster
-        .stream()
+    roster.stream()
         .forEach(e -> System.out.println(e.getName()));
 
     // 3. Print names of male members, forEach operation

@@ -15,7 +15,8 @@ public class Main {
     //demoInterfaceImplementation();
     //demoEnum();
     //demoLambda();
-    Generics.genericDemo();
+    //Generics.genericDemo();
+    HashSetDemo.demoHashSet();
 
   }
 
