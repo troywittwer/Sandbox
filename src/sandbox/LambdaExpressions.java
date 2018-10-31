@@ -98,7 +98,7 @@ interface MyInterface {
 
   public void printIt(String text);
 }
-
+//Testing
 // Without using lambdas, the interface would need to be
 // implemented with a concrete class.
 class MyInterfaceImplementation implements MyInterface {
